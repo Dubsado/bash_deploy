@@ -4,9 +4,11 @@
 #
 cd ~/web/deployScript
 
-if [[ `git status -uno` ]]; then
+changed=0
+git remote update && git status -uno | grep -q 'Your branch is behind' && changed=1
+if [ $changed = 1 ]; then
   echo "changes"
-  git pull --rebase 
+  git pull
   # {{insert build step here}}
 else
   echo "no changes"
