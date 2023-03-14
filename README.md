@@ -18,3 +18,4 @@ This is the cron format. It goes from Minute -> Hour -> Day -> Month -> Day of w
 
 ## Permission denied error
 Try making sure that the permissions on you .sh file are executable by the current user: `chmod 327 foldername` 
+ 
