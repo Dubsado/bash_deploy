@@ -6,7 +6,7 @@ cd ~/web/deployScript
 
 if [[ `git status -uno` ]]; then
   echo "changes"
-  git pull 
+  git pull --rebase 
   # {{insert build step here}}
 else
   echo "no changes"
