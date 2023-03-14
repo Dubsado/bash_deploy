@@ -17,5 +17,5 @@ A quick example as to how to deploy using primitive linux commands.
 This is the cron format. It goes from Minute -> Hour -> Day -> Month -> Day of week. Our example about will run every time the little hand hits the number 7. To make this run every minute simply just put all asterisks. 
 
 ## Permission denied error
-Try making sure that the permissions on you .sh file are executable by the current user: `chmod 327 foldername` 
+Try making sure that the permissions on you .sh file are executable by the current user: `chmod 700 foldername` 
  
