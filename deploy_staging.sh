@@ -4,7 +4,7 @@
 #
 cd ~/web/deployScript
 
-if [[ `git status --porcelain` ]]; then
+if [[ `git status -uno` ]]; then
   echo "changes"
   git pull 
   # {{insert build step here}}
