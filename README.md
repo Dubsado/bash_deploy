@@ -10,6 +10,8 @@ A quick example as to how to deploy using primitive linux commands.
 
 ## How do I know it's working?
 1. `tail /var/log/cron` will likely be where the cron job is located. 
+2. you should be able to check the `git log` to see that it pulled in new code
+3. to verify that it built the correct version, you'd probably have to manually check for the changes
 
 ## What are all the * in the cron job?
 This is the cron format. It goes from Minute -> Hour -> Day -> Month -> Day of week. Our example about will run every time the little hand hits the number 7. To make this run every minute simply just put all asterisks. 
